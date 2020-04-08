@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>test</title>
+	<script type="text/javascript " src="script.js"></script>
+</head>
+<body>
+	<script> function ask(){
+
+name = prompt("What is your name?");
+  
+    if(name != null && isNaN(name) & name != ""){
+  	    document.write("Hello ", name);
+    }else{
+      alert("Invalid name, please try again")
+      ask();
+    }
+}
+
+ask();
+</script>
+
+</body>
+</html>
