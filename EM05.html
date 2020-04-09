@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Even More</title>
+	<script type="text/javascript " src="script.js"></script>
+
+</head>
+<body>
+	<div id ="demo"> </div>
+<script>
+ var n = prompt("Please enter a number", "Any Number 1-9");
+if(!isNaN(n)){
+  
+	var x = ((parseInt(n)+1) *n) /2;
+  if(x % 5 == 0 || x % 3 == 0){
+  	alert(x);
+  }else{
+    alert('Not a multiple');
+  }
+}else{
+  alert('Please enter a number');
+}
+ 
+</script>
+</body>
+</head>
+</html>
