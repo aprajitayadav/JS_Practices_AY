@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Even More</title>
+  <script type="text/javascript " src="script.js"></script>
+
+</head>
+<body>
+  
+<script>
+function checkprimenumber(n){
+for (c=2; c<=n - 1; c++){
+if ( n%c == 0 ){
+return false;
+}
+return true;
+}
+}
+
+function printprimenumber(number){
+if(checkprimenumber(number) == true){
+document.write(number+" is Prime Number ");
+}else{
+/document.write(number+" is Not Prime Number");/
+}
+}
+
+function printnumbers(range){
+for (i=1; i<=range; i++){
+printprimenumber(i);
+}
+}
+
+var maxnumber = 100;
+printnumbers(maxnumber);
+</script>
+</body>
+</head>
+</html>
