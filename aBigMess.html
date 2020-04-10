@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery-1.5.js"></script>
+</head>
+<body>
+
+
+
+	<div>1. Random Placement</div>
+    <div>2. Random Placement</div>
+    <div>3. Random Placement</div>
+    <div>4. Random Placement</div>
+    <div>5. Random Placement</div>
+    <div>6. Random Placement</div>
+    <div>7. Random Placement</div>
+
+
+    <script>
+	
+$(document).ready(function () {
+      let randomValue = function () {
+        return Math.random() * 500
+      }
+      let body = $("body *")
+      body.each(function () {
+        $(this).css({
+          "position": "absolute",
+          "top": randomValue(),
+         "left": randomValue()
+        })
+      })
+   });
+
+
+</script>
+
+  </body>
+</html>
+
+
+
