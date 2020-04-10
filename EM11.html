@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title> 
+      Maximum Element  
+      
+  </title> 
+</head> 
+  
+<body> 
+    <h1 style="color: green"> 
+      Find the maximum element 
+      of an Array 
+  </h1> 
+    <b> 
+       
+  </b> 
+    <p> 
+      Click on the button below to 
+      find out the maximum of the array  
+      [80, 90, 20, 60, 40, 100] 
+  </p> 
+    
+    
+        <p>Maximum Element is: <span class="max"> 
+      </span></p> 
+    <button onclick="findMax()"> 
+      Click to check 
+  </button> 
+    <script> 
+        function findMax() { 
+            array = [80, 90, 20, 60, 40, 100]; 
+            maxValue = -Infinity; 
+  
+            for (item of array) { 
+                
+            // find maximum value 
+                if (item > maxValue) 
+                    maxValue = item; 
+            } 
+  
+            
+            document.querySelector( 
+              '.max').textContent = maxValue; 
+        } 
+    </script> 
+</body> 
+  
+</html> 
