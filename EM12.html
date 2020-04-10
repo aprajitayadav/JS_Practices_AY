@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to reverse the order of the elements in the array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var my = ["Eyes", "Nose", "Ears", "Mouth"];
+document.getElementById("demo").innerHTML = my;
+
+function myFunction() {
+  my.reverse();
+  document.getElementById("demo").innerHTML = my;
+}
+</script>
+
+</body>
+</html>
