@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery-1.5.js"></script>
+</head>
+<body>
+<script>
+
+function isLeapYear( year ) { return ( (new Date( year, 1, 29 )).getDate() === 29); }
+
+function leapYearCalc(yr) {
+
+  var counter = 20;
+ while (counter > 0) {
+    if (isLeapYear(yr)) {
+
+      counter--;
+
+      console.log(yr); document.writeln(yr+'<br>');
+
+    }
+
+    yr++;
+
+  }
+
+}
+
+ 
+
+var year = prompt("please input a year to find out the next 20 years");
+
+leapYearCalc(year);
+
+</script>
+</body>
+</html>
