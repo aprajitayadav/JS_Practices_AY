@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button rotate a list by k elements.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var num = [1, 2, 3, 4, 5, 6];
+
+document.getElementById("demo").innerHTML = "My array is : " + num;
+
+function myFunction() {
+  num.push(num[0],num[1]);
+  num.shift();
+  num.shift();
+  document.getElementById("demo").innerHTML = num;
+
+}
+</script>
+
+</body>
+</html>
