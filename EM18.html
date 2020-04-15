@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    Enter a number:  <input type="text" id="data">
+    <button onclick="check()">Convert</button>
+    <p id="newText"></p>
+    <script>
+        function check(){
+            var data = document.getElementById("data").value;
+            var n = parseInt(data);
+            
+            if(isSquare(n)){
+                document.getElementById("newText").innerHTML = "Number is square";     
+            } else {
+                document.getElementById("newText").innerHTML = "Number is not square";
+            }
+        }
+        function isSquare(n)
+        {
+            for (var i = 0; i < n / 2 + 2; i++)
+            {
+                if (i * i == n)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>
